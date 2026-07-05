@@ -1,6 +1,6 @@
 # Ryo Kanno — Personal Academic Website
 
-Static HTML/CSS website for GitHub Pages, inspired by [mechphnguyen.com](https://mechphnguyen.com).
+Static HTML/CSS website for GitHub Pages
 
 ## Files
 
