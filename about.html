@@ -6,148 +6,139 @@
   <title>About — Ryo Kanno</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <nav class="sidebar">
+  <header class="topnav">
     <a class="site-name" href="index.html">Ryo Kanno</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a></li>
-    </ul>
-    <div class="sidebar-footer">
-      <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a><br/>
-      <div class="social-links">
-        <a href="https://scholar.google.co.jp/citations?user=6euEpQsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="mobile-header">
-    <a class="site-name" href="index.html">Ryo Kanno</a>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a></li>
-    </ul>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Pubs &amp; Patents</a>
+      <a href="about.html" class="active">About</a>
+      <a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">&#9776;</button>
   </header>
 
-  <main class="content">
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Pubs &amp; Patents</a>
+    <a href="about.html">About</a>
+    <a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a>
+  </div>
 
-    <section class="page-header">
+  <main>
+    <section class="page-hero">
       <h1>About</h1>
-      <p class="subtitle">PhD candidate working on soft robotics and biocompatible ionic polymer actuators.</p>
+      <p class="page-sub">PhD candidate in soft robotics, based in Switzerland.</p>
     </section>
 
-    <hr class="divider" />
+    <div class="full-divider"></div>
 
-    <section class="section about-intro">
-      <p>
+    <section class="section inner-section">
+      <p class="about-lead">
         I am a PhD candidate at the <a href="https://sustainability-robotics.ch" target="_blank">Laboratory of Sustainability Robotics</a>
-        at <a href="https://www.empa.ch" target="_blank">Empa</a> and <a href="https://www.epfl.ch" target="_blank">EPFL</a>
-        in Switzerland. My doctoral research focuses on biocompatible ionic polymer actuators with 4D printing,
+        at <a href="https://www.empa.ch" target="_blank">Empa</a> and <a href="https://www.epfl.ch" target="_blank">EPFL</a> in Switzerland.
+        My doctoral research focuses on biocompatible ionic polymer actuators with 4D printing,
         developing magnetically driven high-power underwater soft robots.
       </p>
-      <p>
-        I also work as a Doctoral Assistant at Empa, and previously served as a Student Teaching Assistant
-        for the Sustainability Robotics course at EPFL (Spring 2025).
+      <p class="about-lead">
+        I am actively seeking industry R&amp;D positions where I can apply my expertise in
+        soft actuator design, biocompatible materials, and robotic systems engineering.
       </p>
     </section>
 
-    <hr class="divider" />
+    <div class="full-divider"></div>
 
     <!-- EDUCATION -->
-    <section class="section">
+    <section class="section inner-section">
       <h2>Education</h2>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">2023 – Present</span>
-          <span class="entry-badge">Current</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">2023 – Present</span>
+          <span class="cv-tag">Current</span>
         </div>
-        <div class="entry-body">
+        <div class="cv-body">
           <h3>PhD in Microsystems and Microelectronics</h3>
-          <p class="entry-place"><a href="https://www.epfl.ch" target="_blank">EPFL</a>, Switzerland</p>
-          <p>Topic: Biocompatible ionic polymer actuator with 4D printing — Magnetically driven high power underwater soft robots</p>
-          <p class="entry-note">Specializing in actuation technology of soft robotics</p>
+          <p class="cv-place"><a href="https://www.epfl.ch" target="_blank">EPFL</a>, Switzerland</p>
+          <p>Topic: Biocompatible ionic polymer actuator with 4D printing — Magnetically driven high-power underwater soft robots</p>
+          <p class="cv-note">Specializing in actuation technology of soft robotics</p>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">2021 – 2023</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">2021 – 2023</span>
         </div>
-        <div class="entry-body">
+        <div class="cv-body">
           <h3>MSc in Mechanical Engineering and Intelligent Systems</h3>
-          <p class="entry-place"><a href="https://www.uec.ac.jp/eng/" target="_blank">UEC Tokyo</a>, Japan</p>
-          <p>Topic: Biodegradable soft robots — Edible soft robots — Electrohydraulic pump</p>
-          <p class="entry-note">Specializing in human/eco-friendly material based robotic systems, soft pumps · GPA: 2.64/3.00</p>
+          <p class="cv-place"><a href="https://www.uec.ac.jp/eng/" target="_blank">UEC Tokyo</a>, Japan</p>
+          <p>Topic: Biodegradable soft robots · Edible soft robots · Electrohydraulic pump · GPA: 2.64/3.00</p>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">2017 – 2021</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">2017 – 2021</span>
         </div>
-        <div class="entry-body">
+        <div class="cv-body">
           <h3>BSc in Informatics and Engineering, Measurements and Control Systems</h3>
-          <p class="entry-place"><a href="https://www.uec.ac.jp/eng/" target="_blank">UEC Tokyo</a>, Japan</p>
-          <p>Projects: Rapid fabrication of electroactive polymer actuators — Paper electronics with silver nanowires</p>
-          <p class="entry-note">GPA: 2.95/4.00</p>
+          <p class="cv-place"><a href="https://www.uec.ac.jp/eng/" target="_blank">UEC Tokyo</a>, Japan</p>
+          <p>Projects: Rapid fabrication of electroactive polymer actuators · Paper electronics with silver nanowires · GPA: 2.95/4.00</p>
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
+    <div class="full-divider"></div>
 
-    <!-- WORK EXPERIENCE -->
-    <section class="section">
+    <!-- EXPERIENCE -->
+    <section class="section inner-section">
       <h2>Work Experience</h2>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">Jun 2023 – Present</span>
-          <span class="entry-badge">Current</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">Jun 2023 – Present</span>
+          <span class="cv-tag">Current</span>
         </div>
-        <div class="entry-body">
+        <div class="cv-body">
           <h3>Doctoral Assistant</h3>
-          <p class="entry-place">Laboratory of Sustainability Robotics, Empa/EPFL, Switzerland</p>
+          <p class="cv-place">Laboratory of Sustainability Robotics, Empa / EPFL, Switzerland</p>
+          <p>Research on biocompatible ionic polymer actuators, 4D printing, and magnetically driven underwater soft robots.</p>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">Feb – May 2025</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">Feb – May 2025</span>
         </div>
-        <div class="entry-body">
-          <h3>Student Teaching Assistant</h3>
-          <p class="entry-place">EPFL, Switzerland</p>
-          <p>Instructed soft robotics and soft devices in the Sustainability Robotics course.</p>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">Apr – May 2023</span>
-        </div>
-        <div class="entry-body">
-          <h3>Research Assistant</h3>
-          <p class="entry-place">Shintake Research Group, UEC Tokyo, Japan</p>
+        <div class="cv-body">
+          <h3>Student Teaching Assistant — Sustainability Robotics</h3>
+          <p class="cv-place">EPFL, Switzerland</p>
+          <p>Instructed soft robotics and soft devices; designed lab exercises on actuator fabrication.</p>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-meta">
-          <span class="entry-date">Mar 2022 – Feb 2023</span>
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">Mar 2022 – Feb 2023</span>
         </div>
-        <div class="entry-body">
+        <div class="cv-body">
           <h3>Research Intern</h3>
-          <p class="entry-place">Laboratory of Intelligent Systems, EPFL, Switzerland</p>
+          <p class="cv-place">Laboratory of Intelligent Systems, EPFL, Switzerland</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-meta">
+          <span class="cv-date">Apr – May 2023</span>
+        </div>
+        <div class="cv-body">
+          <h3>Research Assistant</h3>
+          <p class="cv-place">Shintake Research Group, UEC Tokyo, Japan</p>
         </div>
       </div>
     </section>
@@ -155,12 +146,12 @@
   </main>
 
   <footer class="footer">
-    © 2026 Ryo Kanno · <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a>
+    © 2026 Ryo Kanno &nbsp;·&nbsp; <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a>
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
     }
   </script>
 </body>

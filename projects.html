@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ryo Kanno</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="topnav">
+    <a class="site-name" href="index.html">Ryo Kanno</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="publications.html">Pubs &amp; Patents</a>
+      <a href="about.html">About</a>
+      <a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Pubs &amp; Patents</a>
+    <a href="about.html">About</a>
+    <a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <h1>Projects</h1>
+      <p class="page-sub">Research and engineering projects in soft robotics and actuator design.</p>
+    </section>
+
+    <div class="full-divider"></div>
+
+    <section class="section inner-section">
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <div class="project-image-placeholder">
+          <!-- Replace with: <img src="images/project-ipmc.jpg" alt="IPMC Actuator" /> -->
+          <span>Project photo / GIF</span>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">PhD Research · Empa / EPFL</span>
+          <h3>Biocompatible Ionic Polymer Actuators via 4D Printing</h3>
+          <p>
+            Designed and fabricated ionic polymer metal composite (IPMC) actuators using
+            biocompatible materials and multi-material 4D printing. Developed magnetically
+            driven actuation mechanisms achieving high-power output for underwater soft robots.
+          </p>
+          <p class="project-outcome">→ Spotlight paper at RoboSoft 2025 · Cover of Advanced Sustainable Systems</p>
+        </div>
+      </div>
+
+      <div class="full-divider"></div>
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <div class="project-image-placeholder">
+          <span>Project photo / GIF</span>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">MSc Research · UEC Tokyo</span>
+          <h3>Biodegradable &amp; Edible Soft Robots</h3>
+          <p>
+            Developed biodegradable soft robotic systems using edible and eco-safe materials.
+            Designed an electrohydraulic pump mechanism for soft actuation without conventional
+            rigid components.
+          </p>
+          <p class="project-outcome">→ Best Paper Finalist, RoboSoft 2024</p>
+        </div>
+      </div>
+
+      <div class="full-divider"></div>
+
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <div class="project-image-placeholder">
+          <span>Project photo / GIF</span>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">BSc Research · UEC Tokyo</span>
+          <h3>Rapid Fabrication of Electroactive Polymer Actuators</h3>
+          <p>
+            Developed rapid fabrication methods for electroactive polymer actuators.
+            Also worked on paper-based electronics using silver nanowire networks
+            for flexible and lightweight sensor applications.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 Ryo Kanno &nbsp;·&nbsp; <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
