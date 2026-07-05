@@ -1,1 +1,116 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ryo Kanno — PhD candidate at EPFL working on soft robotics and biocompatible ionic polymer actuators." />
+  <title>Ryo Kanno</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SIDEBAR NAV -->
+  <nav class="sidebar">
+    <a class="site-name" href="index.html">Ryo Kanno</a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a><br/>
+      <div class="social-links">
+        <a href="https://scholar.google.co.jp/citations?user=6euEpQsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <header class="mobile-header">
+    <a class="site-name" href="index.html">Ryo Kanno</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="CV_Ryo_Kanno_General.pdf" target="_blank">CV ↗</a></li>
+    </ul>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Ryo Kanno</h1>
+        <p class="subtitle">Soft Robotics · Biocompatible Actuators · 4D Printing</p>
+        <p class="affil">
+          PhD Candidate · <a href="https://sustainability-robotics.ch" target="_blank">Laboratory of Sustainability Robotics</a>,
+          <a href="https://www.empa.ch" target="_blank">Empa</a> &amp;
+          <a href="https://www.epfl.ch" target="_blank">EPFL</a>, Switzerland
+        </p>
+        <p class="bio">
+          I develop biocompatible ionic polymer actuators using 4D printing, with a focus on
+          magnetically driven high-power underwater soft robots. My work sits at the intersection
+          of materials science, soft robotics, and sustainable design, aiming to create robots
+          that are safe for both humans and the environment.
+        </p>
+        <div class="hero-links">
+          <a href="about.html" class="btn">About me →</a>
+          <a href="https://scholar.google.co.jp/citations?user=6euEpQsAAAAJ&hl=en" target="_blank" class="btn btn-outline">Publications ↗</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <!-- Replace with your actual photo: <img src="images/headshot.jpg" alt="Ryo Kanno" /> -->
+        <div class="photo-placeholder">
+          <span>Photo</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- NEWS -->
+    <section class="section">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">Nov 2025</span>
+          <span>Attended <a href="https://swissroboticsday.ch/srd25/" target="_blank">Swiss Robotics Day</a> in Lausanne, Switzerland.</span>
+        </li>
+        <li>
+          <span class="news-date">Apr 2025</span>
+          <span><a href="https://arxiv.org/pdf/2501.12025" target="_blank">Our paper</a> selected as a <strong>Spotlight Paper</strong> at the 8th IEEE-RAS International Conference on Soft Robotics (RoboSoft 2025).</span>
+        </li>
+        <li>
+          <span class="news-date">Feb 2025</span>
+          <span><a href="https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adsu.202570021" target="_blank">Our paper</a> selected as the <strong>cover</strong> of Advanced Sustainable Systems.</span>
+        </li>
+        <li>
+          <span class="news-date">Nov 2024</span>
+          <span><a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adsu.202400450" target="_blank">New co-authored paper</a> published in Advanced Sustainable Systems.</span>
+        </li>
+        <li>
+          <span class="news-date">Apr 2024</span>
+          <span><a href="https://takahiromiki.com/publication-posts/learning-to-walk-in-confined-spaces-using-3d-representation/" target="_blank">Our paper</a> selected as <strong>Best Paper Finalist</strong> (Excellence in Manufacturing Reproducibility) at RoboSoft 2024.</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 Ryo Kanno · <a href="mailto:ryo.kanno@epfl.ch">ryo.kanno@epfl.ch</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
