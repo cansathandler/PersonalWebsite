@@ -258,7 +258,11 @@ body {
    EXPERTISE GRID
    ============================================ */
 
-.expertise-section { padding-top: 3rem; }
+.expertise-section { padding-top: 3rem; 
+ .expertise-banner-wrapper {
+  width: stretch;
+ }
+}
 
 .expertise-grid {
   display: grid;
