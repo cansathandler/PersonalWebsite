@@ -441,13 +441,14 @@ body {
 }
 
 .project-image-placeholder,
-.project-card img {
+.project-card img,
+.project-card video {
   flex-shrink: 0;
-  width: 280px;
-  height: 190px;
-  object-fit: cover;
+  width: 320px;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
   border-radius: 4px;
-  background: var(--bg-card);
   border: 1px dashed var(--border);
   display: flex;
   align-items: center;

@@ -1,82 +1,49 @@
 # Ryo Kanno — Personal Academic Website
 
-Static HTML/CSS website for GitHub Pages, inspired by [mechphnguyen.com](https://mechphnguyen.com).
+Static HTML/CSS site hosted on GitHub Pages.
+Live: https://cansathandler.github.io/PersonalWebsite/ (and https://ryokanno.net once DNS is set)
 
 ## Files
 
 ```
-index.html        ← Home page
-about.html        ← Education & work experience
-publications.html ← Papers and awards
-style.css         ← All styling (shared across pages)
-README.md         ← This file
+index.html          Home (hero, expertise, recent news)
+projects.html       Project cards with embedded MP4
+publications.html   Papers, patents, awards
+about.html          Education & work experience
+style.css           All styling (shared)
+*.mp4 / *.png / ...  Media referenced by the pages
 ```
 
-## How to publish on GitHub Pages
+Only media actually referenced by the HTML is kept in this repo. Unused
+originals (full-length source videos) stay on the local machine.
 
-### Step 1 — Create a GitHub account
-If you don't have one: https://github.com/signup
+## Updating the site
 
-### Step 2 — Create a new repository
-1. Go to https://github.com/new
-2. Name it exactly: `yourusername.github.io`
-   (replace `yourusername` with your actual GitHub username)
-3. Set it to **Public**
-4. Click **Create repository**
-
-### Step 3 — Upload the files
-**Option A (easiest — no coding needed):**
-1. In your new repository, click **Add file → Upload files**
-2. Drag all files (index.html, about.html, publications.html, style.css) into the browser
-3. Click **Commit changes**
-
-**Option B (using Git):**
 ```bash
-git init
 git add .
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
-git push -u origin main
+git commit -m "Update projects page"
+git push
 ```
 
-### Step 4 — Enable GitHub Pages
-1. Go to your repository → **Settings** → **Pages**
-2. Under "Source", select **main** branch, folder **/ (root)**
-3. Click **Save**
-4. Your site will be live at: `https://yourusername.github.io`
+GitHub Pages redeploys automatically, usually within a minute.
 
-(It may take 1–2 minutes to go live after the first deploy.)
+## Custom domain (ryokanno.net)
 
----
+1. Repo → **Settings → Pages → Custom domain** → enter `ryokanno.net` → Save.
+   (This creates a `CNAME` file in the repo — do not delete it.)
+2. At the registrar for ryokanno.net, set:
 
-## How to add your photo
-
-1. Create a folder called `images/` in the repository
-2. Upload your headshot as `images/headshot.jpg`
-3. In `index.html`, find the `photo-placeholder` div and replace it with:
-   ```html
-   <img src="images/headshot.jpg" alt="Ryo Kanno" />
    ```
-
-## How to use your own domain (e.g. ryokanno.net)
-
-1. In your repo → **Settings → Pages → Custom domain**, type `ryokanno.net`
-2. In your domain registrar (wherever you bought ryokanno.net), add these DNS records:
+   A     @     185.199.108.153
+   A     @     185.199.109.153
+   A     @     185.199.110.153
+   A     @     185.199.111.153
+   CNAME www   cansathandler.github.io
    ```
-   A    @    185.199.108.153
-   A    @    185.199.109.153
-   A    @    185.199.110.153
-   A    @    185.199.111.153
-   CNAME www  yourusername.github.io
-   ```
-3. Wait up to 24 hours for DNS to propagate, then check **Enforce HTTPS** in the Pages settings.
+3. After DNS propagates, tick **Enforce HTTPS**.
 
-## Updating your CV
+## TODO
 
-Replace `CV_Ryo_Kanno_General.pdf` in the repository with your latest PDF.
-The nav links will automatically point to the new version.
-
-## Adding more publications
-
-Copy a `<div class="pub-entry">` block in `publications.html` and fill in your details.
+- [ ] Add `CV_Ryo_Kanno_General.pdf` to the repo root — the nav "CV ↗" link
+      currently 404s because the file is missing.
+- [ ] Optional: compress the MP4s further (`ffmpeg -crf 28`) to speed up loading.
