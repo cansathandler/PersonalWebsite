@@ -292,6 +292,37 @@ body {
 }
 
 /* ============================================
+   EXPERTISE BANNER
+   ============================================ */
+
+.expertise-banner-wrapper {
+  width: 100%;
+  margin: 0 0 2.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.expertise-banner-img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* safety net: no image can ever overflow the page */
+img { max-width: 100%; }
+
+@media (max-width: 860px) {
+  .expertise-banner-img { height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .expertise-banner-img { height: 140px; }
+}
+
+/* ============================================
    RECENT LIST
    ============================================ */
 
